@@ -1,0 +1,15 @@
+body > div {
+    background-color: var(--light-green);
+}
+
+.main__header {
+    background-color: var(--green);
+    background-image: url("../images/2-preview/karsten-big.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.main__content button {
+    background-color: var(--green);
+    color: var(--white);
+}

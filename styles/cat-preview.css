@@ -1,0 +1,16 @@
+body > div {
+    background-color: var(--beige);
+}
+
+.main__header {
+    background-color: var(--orange);
+    background-image: url("../images/2-preview/alex-big.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.main__content button {
+    background-color: var(--orange);
+    color: var(--white);
+}

@@ -1,0 +1,103 @@
+body > div {
+    background-color: var(--beige);
+}
+
+.selected {
+    color: white !important;
+    background-color: var(--orange) !important;
+}
+
+.main__card_top, .main__card_top_modification {
+    background-color: var(--orange);
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main__card_top_modification img {
+    transform: translateY(25px);
+    transition: transform 0.8s ease;
+}
+
+.main__card_top img {
+    transform: translateY(10px);
+    transition: transform 0.8s ease;
+}
+
+.main__card:hover .main__card_top img {
+    animation: change_img 1s forwards;
+}
+
+.main__card:hover .main__card_top_modification img {
+    animation: change_img_modification 1s forwards;
+}
+
+
+
+@keyframes radial {
+    0% {
+        background-color: var(--orange);
+        border-radius: 100%;
+        background-size: 0;
+    }
+    100% {
+        background-color: var(--white);
+        border-radius: 0;
+        background-size: 100%;
+    }
+}
+
+@keyframes change {
+    0% {
+        background-color: var(--white);
+        color: var(--dark-blue);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: 100px 30px;
+        background-image: url("../images/1-search/hearthome.svg");
+    }
+    50% {
+        background-color: var(--white);
+        color: var(--dark-blue);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: 100px 30px;
+        background-image: url("../images/1-search/hearthome.svg");
+    }
+    100% {
+        background-color: var(--orange);
+        color: white;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: 100px 30px;
+        background-image: url("../images/1-search/hearthome-white.svg");
+    }
+}
+
+@keyframes change_img {
+    0% {
+        transform: translateY(10px);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes change_img_modification {
+    0% {
+        transform: translateY(25px);
+    }
+    40% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+

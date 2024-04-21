@@ -1,0 +1,141 @@
+body > div {
+    background-image: linear-gradient(to bottom, var(--light-blue), var(--dark-blue));
+    display: grid;
+    grid-template-rows: 150px 650px;
+    width: 414px;
+    height: 800px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.header__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.header__button {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+}
+
+.dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.white {
+    background-color: var(--white);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.main__content h1 {
+    font-size: 64px;
+    color: var(--dark-blue);
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.main__content p {
+    width: 300px;
+    font-size: 18px;
+    color: var(--white);
+    font-weight: normal;
+}
+
+.main__image_boy {
+    width: 414px;
+    height: 400px;
+    background-image: url("../images/0-home/slide1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 30px 30px;
+        animation: slide 0.8s ease-in-out;
+}
+
+.main__image_girl {
+    width: 414px;
+    height: 491px;
+    background-image: url("../images/0-home/slide2.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 30px 30px;
+    animation: slide 0.8s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(50%);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main__footer {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.main__footer2 {
+    width: 100%;
+    height: 491px;
+    position: relative;
+}
+
+.main__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--dark-blue);
+    background-image: url("../images/0-home/chevron-right.svg");
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.main__button_pos1 {
+    position: absolute;
+    bottom: 30px;
+    right: 177px;
+}
+
+.main__button_pos2 {
+    position: absolute;
+    bottom: 33px;
+    right: 177px;
+}
+
+.main__button:hover {
+    transform: scale(1.1) rotate(90deg);
+}
+
